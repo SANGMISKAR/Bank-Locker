@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Locker Management System</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-size: medium;
+            background-color: antiquewhite;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d55611;
+            padding: 20px;
+            position: static;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            padding-left: 1em;
+            color: black;
+            font-family: "Lucida Bright";
+            font-style: oblique;
+        }
+
+        .navlinks a {
+            color: rgb(236, 229, 229);
+            padding: 2em;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: double;
+            font-family: "Lucida Bright";
+        }
+
+        .navlinks a:hover {
+            color: black;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+        .section {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .about-section, .contact-section {
+            padding: 20px;
+            border: solid hsl(36, 92%, 45%);
+            border-radius: 10px;
+            box-shadow: 0px 5px 8px rgb(20, 20, 20);
+        }
+
+        .contact-section p {
+            margin: 5px 0;
+        }
+
+        .contact-section {
+            padding: 2em;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+        }
+
+        .features {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border: solid hsl(36, 92%, 45%);
+            border-radius: 10px;
+            background-color: antiquewhite;
+           
+        }
+
+        .feature {
+            flex: 1;
+            max-width: 180px;
+            margin: 20px;
+            padding: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 25px;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s;
+        }
+
+        .feature p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: black;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(12, 12, 12, 0.2);
+            background-color: #f0b465;
+        }
+
+        .feature:hover img {
+            transform: scale(1.2);
+        }
+
+        .upper {
+            padding: 5px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #d55611;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .footer-column p, .footer-column a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social-icons {
+            margin-top: 20px;
+        }
+
+        .footer-social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            font-size: 16px;
+            color: #bbb;
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+        }
+
+        .footer-bottom a {
+            color: #bbb;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="scroll">
+    <div class="upper"></div>
+    <div class="navbar">
+        <h1>District Co-operative Bank</h1>
+        <div class="navlinks">
+            <a href="#home" onclick="scrollToSection('home')">Home</a>
+            <a href="Dimensions Of Lockers.pdf">Lockers</a>
+            <a href="#footer" onclick="scrollToSection('contact')">Contact Us</a>
+            <a href="booking1.php" target="_blank">Book Locker</a>
+        </div>
+    </div>
+
+    <div id="home" class="section image-section">
+        <img src="iamge/indexlocker.png" alt="Bank Image">
+    </div>
+
+    <div class="section about-section">
+        <h1>Secure Your Valuables with Our Trusted Bank Locker Services!</h1>
+        <p>
+            Protect your most treasured possessions with our secure bank locker services.
+            Whether it’s jewelry, important documents, or other valuable items, our lockers offer the peace of mind you need.
+        </p>
+        <p>
+            <strong>Why Choose Our Lockers?</strong><br>
+            <strong>State-of-the-Art Security: </strong> Our bank lockers are equipped with advanced security features, including biometric access and 24/7 surveillance, ensuring your valuables are always safe.<br>
+            <strong>Privacy & Convenience: </strong>Enjoy privacy with our discreet access procedures and the convenience of managing your locker details online.<br>
+            <strong>Flexible Sizes: </strong>Choose from a range of locker sizes to fit your specific needs, ensuring you only pay for the space you use.<br>
+            <strong>Transparent Pricing:</strong>We offer competitive rates with no hidden charges. Our clear pricing structure makes it easy for you to choose the best plan.<br>
+        </p>
+    </div>
+
+    <div class="features">
+        <h1>Safe Deposit Lockers: Benefits</h1>
+        <div class="features-container">
+            <div class="feature">
+                <img src="iamge/safebox (1).png" alt="State-of-the-art lockers">
+                <p>State-of-the-art lockers</p>
+            </div>
+            <div class="feature">
+                <img src="iamge/alarm.png" alt="Latest burglar alarm systems">
+                <p>Latest burglar alarm systems</p>
+            </div>
+            <div class="feature">
+                <img src="iamge/reset-password.png" alt="Assign code word for additional safety">
+                <p>Assign code word for additional safety</p>
+            </div>
+            <div class="feature">
+                <img src="iamge/locker.png" alt="Available in different sizes as per requirement">
+                <p>Available in different sizes as per requirement</p>
+            </div>
+            <div class="feature">
+                <img src="iamge/savebox.png" alt="Lockers and their contents can be nominated">
+                <p>Lockers and their contents can be nominated</p>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>10, D.N. Road,Fort, Mumbai - 400001</p>
+                <p>Phone: 7584961278</p>
+                <p>Email: districtbank@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <a href="#home" onclick="scrollToSection('home')">Home</a><br>
+                <a href="Dimensions Of Lockers.pdf">Locker Sizes</a><br>
+                <a href="booking1.php" target="_blank">Book a Locker</a><br>
+               
+                <a href="#contact" onclick="scrollToSection('contact')">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="iamge/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="iamge/gmail.png" alt="Gmail"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 District Co-operative Bank. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
